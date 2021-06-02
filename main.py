@@ -1,7 +1,7 @@
 from enum import Enum
 print("Hello world")
 
-cities = Enum('cities','Arad,Bucareste,Craiova, Drobeta, Eforie, Fagaras, Giurgiu, Hirsova, Lasi, Lugoj, Mehadia, Neamt, Oradea, Pitesti, RimnicuVilcea, Sibiu, Timisoara, Urziceni, Vaslui, Zerind')
+cities = Enum('cities','Arad,Bucareste,Craiova, Drobeta, Eforie, Fagaras, Giurgiu, Hirsova, Iasi, Lugoj, Mehadia, Neamt, Oradea, Pitesti, RimnicuVilcea, Sibiu, Timisoara, Urziceni, Vaslui, Zerind')
 cities.Drobeta
 
 graph = {
@@ -104,55 +104,188 @@ graph = {
 	},
 	cities.Hirsova: {
 		"h":151,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Urziceni,
+				"distance":98
+			},
+			{
+				"name":cities.Eforie,
+				"distance":86
+			}
+		]
 	},
-	cities.Lasi: {
+	cities.Iasi: {
 		"h":226,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Neamt,
+				"distance":87
+			},
+			{
+				"name":cities.Vaslui,
+				"distance":92
+			}
+		]
 	},
 	cities.Lugoj: {
 		"h":244,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Mehadia,
+				"distance":70
+			},
+			{
+				"name":cities.Timisoara,
+				"distance":11
+			}
+		]
 	},
 	cities.Mehadia: {
 		"h":241,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Lugoj,
+				"distance":70
+			},
+			{
+				"name":cities.Drobeta,
+				"distance":75
+			}
+		]
 	},
 	cities.Neamt: {
 		"h":234,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Iasi,
+				"distance":87
+			}
+		]
 	},
 	cities.Oradea: {
 		"h":380,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Zerind,
+				"distance":71
+			},
+			{
+				"name":cities.Sibiu,
+				"distance":151
+			}
+		]
 	},
 	cities.Pitesti: {
 		"h":100,
-		"children":[]
+		"children":[
+			{
+				"name":cities.RimnicuVilcea,
+				"distance":97
+			},
+			{
+				"name":cities.Craiova,
+				"distance":138
+			},
+			{
+				"name":cities.Bucareste,
+				"distance":101
+			},
+		]
 	},
 	cities.RimnicuVilcea: {
 		"h":193,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Pitesti,
+				"distance":97
+			},
+			{
+				"name":cities.Sibiu,
+				"distance":80
+			},
+			{
+				"name":cities.Craiova,
+				"distance":146
+			},
+		]
 	},
 	cities.Sibiu: {
 		"h":253,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Oradea,
+				"distance":151
+			},
+			{
+				"name":cities.Fagaras,
+				"distance":99
+			},
+			{
+				"name":cities.RimnicuVilcea,
+				"distance":80
+			},
+			{
+				"name":cities.Arad,
+				"distance":140
+			},
+		]
 	},
 	cities.Timisoara: {
 		"h":329,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Arad,
+				"distance":118
+			},
+			{
+				"name":cities.Lugoj,
+				"distance":111
+			}
+		]
 	},
 	cities.Urziceni: {
 		"h":80,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Vaslui,
+				"distance":142
+			},
+			{
+				"name":cities.Hirsova,
+				"distance":98
+			},
+			{
+				"name":cities.Bucareste,
+				"distance":85
+			}
+		]
 	},
 	cities.Vaslui: {
 		"h":199,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Iasi,
+				"distance":92
+			},
+			{
+				"name":cities.Urziceni,
+				"distance":142
+			}
+		]
 	},
 	cities.Zerind: {
 		"h":374,
-		"children":[]
+		"children":[
+			{
+				"name":cities.Oradea,
+				"distance":71
+			},
+			{
+				"name":cities.Arad,
+				"distance":75
+			}
+		]
 	},
 }
 
