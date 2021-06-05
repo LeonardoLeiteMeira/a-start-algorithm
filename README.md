@@ -1,1 +1,1 @@
-# a-start-algorithm
+# a-star-algorithm
