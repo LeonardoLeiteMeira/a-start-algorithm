@@ -1,3 +1,9 @@
+# Tarefa 1 - A*
+# Inteligencia artificial 2021.1 - CEFET MG - Belo Horizonte
+# Nomes: 
+#   Leonardo Leite Meira - 20183005069
+#   Rafael Silvério de Sá - 20183012994
+
 from a_star import a_star_search
 from enum import Enum
 import math
