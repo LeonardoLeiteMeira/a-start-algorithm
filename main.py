@@ -414,6 +414,4 @@ graph = {
     },
 }
 
-# print(graph[cities.Zerind]["h"])
-
 a_star_search(graph, graph[cities.Arad], graph[cities.Bucareste])
